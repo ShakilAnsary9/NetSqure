@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --margin-lf: 0 8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Navbar CSS */
+
+.navbar {
+  background-color: #0f172a;
+}
+.container-fluid {
+  margin: var(--margin-lf) !important;
+}
+.logo {
+  width: 140px;
+  padding: 10px 0;
+  margin: 0;
+}
+.nav-link {
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  font-family: "Poppins", sans-serif;
+}
+.nav-btn {
+  border: none;
+  padding: 8px 25px;
+  background-color: #e22713;
+  color: #ffffff;
+  font-weight: 600;
+}
+.navbar-toggler {
+  color: #ffffff !important;
+}
+.navbar-toggler-icon {
+  color: #ffffff !important;
+}
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end !important;
+}
+.nav-last-item {
+  margin-right: 15px;
+}
+
+/* Hero Section CSS */
+
+.hero-section {
+  height: 100vh;
+  background-image: url(./images/video-capture-4484.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  padding: var(--margin-lf);
+  overflow: hidden;
+}
+.hero-text {
+  font-size: 7.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 10%;
+}
+.hero-text span {
+  color: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+}
+.text-first {
+  color: #e22713 !important;
+}
+.hero-button span {
+  font-size: 3rem;
+  font-weight: 100;
+  text-decoration: none;
+  color: #ffffff;
+  background: rgb(234, 58, 41);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 58, 41, 1) 0%,
+    rgba(246, 114, 82, 1) 100%
+  );
+  padding: 12px 12px;
+  border: none;
+  border-radius: 50px;
+}
+.herobtn-div {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+.herobtn-div h3 {
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 3px 0 0 20px;
+}
+
+/* Stats CSS */
+
+.stats {
+  background: rgb(246, 114, 82);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 114, 82, 1) 0%,
+    rgba(234, 58, 41, 1) 100%
+  );
+  padding: var(--margin-lf);
+  color: #ffffff;
+}
+.line {
+  border-right: 3px solid rgb(255, 255, 255, 0.2);
+}
+.statcomp span {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.statdiv {
+  padding: 100px 0;
+}
+.statcomp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.statcomp h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.statcomp h3 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* About CSS */
+
+.about {
+  margin: 100px 0 0 0px !important;
+}
+.about h1 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ea3a29;
+}
+.about h3 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.about p {
+  font-size: 18px;
+  margin-top: 70px;
+  margin-right: 150px;
+}
+.aboutbtn {
+  margin-top: 100px;
+}
+.about-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: rgb(234, 58, 41);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 58, 41, 1) 0%,
+    rgba(246, 114, 82, 1) 100%
+  );
+  padding: 15px 35px;
+}
+.btn-item span {
+  font-weight: 100 !important;
+  font-size: 2rem;
+}
+.noslidess {
+  width: 100%;
+}
