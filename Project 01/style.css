@@ -163,6 +163,7 @@ body {
   font-size: 18px;
   margin-top: 70px;
   margin-right: 150px;
+  color: #737373;
 }
 .aboutbtn {
   margin-top: 100px;
@@ -193,4 +194,197 @@ body {
 }
 .noslidess {
   width: 100%;
+}
+
+/* UP Editions CSS */
+
+.upedt {
+  background-color: #f1f5f9;
+  padding-bottom: 8rem;
+}
+.uptitle {
+  margin: var(--margin-lf);
+}
+.uptitle h1 {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e22713;
+  padding-top: 6rem;
+}
+.uptitle p {
+  font-size: 18px;
+  color: #737373;
+  margin: 20px 0 60px 0;
+}
+.imgrid {
+  margin: var(--margin-lf);
+}
+.imsec {
+  display: flex;
+  align-items: end;
+  height: 650px;
+  width: 100%;
+  background-color: #737373;
+  margin: 20px 40px 20px 10px;
+}
+.imone {
+  background-image: url(./images/imgone.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imtwo {
+  background-image: url(./images/imgtwo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imthree {
+  background-image: url(./images/imgthree.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* UP Editions CSS */
+
+.cardmar {
+  margin: 20px;
+}
+.cardtitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.evntschedule {
+  color: #ffffff;
+  display: flex;
+  margin-top: 10px;
+}
+
+.evntdate {
+  display: flex;
+}
+.evntdate p {
+  margin-left: 10px;
+}
+.evntlocation {
+  display: flex;
+}
+.evntlocation p {
+  margin-left: 10px;
+}
+.evntlocation span {
+  margin-left: 10px;
+}
+
+/* Card Button */
+
+.cardbtn {
+  margin: 20px 0 15px 0;
+}
+.card-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.cardbtn-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border: none;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  padding: 10px 35px;
+}
+.cardbtn-item span {
+  font-weight: 100 !important;
+  font-size: 2rem;
+  rotate: -45deg;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-text {
+    font-size: 3.5rem;
+  }
+  .container-fluid {
+    margin: 0 !important;
+  }
+  .hero-section {
+    padding: 1rem !important;
+    height: 80vh;
+  }
+  .line {
+    border-right: 0;
+  }
+  .statcomp span {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .stats {
+    padding: 0;
+  }
+  .statcomp h1 {
+    font-size: 24px;
+  }
+  .statcomp h3 {
+    font-size: 14px;
+  }
+  .statdiv {
+    padding: 30px 0;
+  }
+  .statcomp {
+    margin: 20px 0;
+  }
+  .about {
+    padding: 0 1rem !important;
+    margin-top: 50px !important;
+  }
+  .about-event .row {
+    --bs-gutter-x: 0;
+  }
+  .about h3 {
+    font-size: 18px;
+  }
+  .about p {
+    margin-right: 0;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .aboutbtn {
+    margin: 20px 0 50px 0;
+  }
+  .btn-item {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 20px;
+  }
+  .uptitle {
+    margin: 1rem;
+  }
+  .uptitle h1 {
+    font-size: 24px;
+    padding-top: 50px;
+  }
+  .uptitle p {
+    font-size: 14px;
+  }
+  .imgrid {
+    margin: 1rem;
+  }
+  .imsec {
+    height: 420px;
+    margin: 0;
+    display: flex;
+    align-items: end;
+  }
+  .evntschedule span {
+    font-size: 18px;
+  }
+  .evntschedule p {
+    font-size: 14px;
+  }
 }
