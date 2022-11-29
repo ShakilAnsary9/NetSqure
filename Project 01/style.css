@@ -306,6 +306,91 @@ body {
   rotate: -45deg;
 }
 
+/* Speakers Profile CSS  */
+.speakers .container-fluid {
+  --bs-gutter-x: 0 !important;
+  margin: 0 !important;
+}
+.sp__profile,
+.sp__text,
+.sp__button {
+  height: 20rem;
+}
+.sp__text,
+.sp__button {
+  background-color: #1f1c1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sp__button {
+  align-items: center;
+}
+.sp__text h1 {
+  color: #e22713;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.sp__text h3 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.sp__one {
+  background-image: url(./images/Judith.jpg);
+  background-size: cover;
+}
+.sp__two {
+  background-image: url(./images/RUDI-LUMANTO-1.jpg);
+  background-size: cover;
+}
+.sp__three {
+  background-image: url(./images/Margaret-Yunque-.jpg);
+  background-size: cover;
+}
+.sp__four {
+  background-image: url(./images/Ruselle.jpg);
+  background-size: cover;
+}
+.sp__five {
+  background-image: url(./images);
+  background-size: cover;
+}
+
+.speakers {
+  padding-bottom: 4rem;
+}
+
+/* View All Button */
+
+.viewallbtn {
+  margin: 20px 0 15px 0;
+}
+.viewall-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.viewbtn-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: rgb(234, 58, 41);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 58, 41, 1) 0%,
+    rgba(246, 114, 82, 1) 100%
+  );
+  padding: 10px 35px;
+}
+.viewbtn-item span {
+  font-weight: 100 !important;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 600px) {
   .hero-text {
     font-size: 3.5rem;
@@ -346,6 +431,7 @@ body {
   .about-event .row {
     --bs-gutter-x: 0;
   }
+
   .about h3 {
     font-size: 18px;
   }
@@ -386,5 +472,8 @@ body {
   }
   .evntschedule p {
     font-size: 14px;
+  }
+  .upedt {
+    padding-bottom: 2rem;
   }
 }
