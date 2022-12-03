@@ -166,7 +166,7 @@ body {
   color: #737373;
 }
 .aboutbtn {
-  margin-top: 100px;
+  padding: 80px 0;
 }
 .about-btn {
   text-decoration: none;
@@ -356,10 +356,40 @@ body {
   background-image: url(./images);
   background-size: cover;
 }
-
 .speakers {
   padding-bottom: 4rem;
   overflow: hidden;
+}
+.img__grid {
+  --bs-gutter-x: 0 !important;
+}
+.social__hover {
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.556442645417542) 100%
+  );
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.hov__icon {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+.social__hover:hover {
+  opacity: 1;
+  transition: all ease-in 0.4s;
+}
+.hov__icon i:hover {
+  color: #e22713;
 }
 
 /* View All Button */
@@ -594,11 +624,11 @@ body {
   object-fit: cover;
 }
 .article__title {
-  height: 35rem;
   background-color: #ffffff;
   z-index: 1;
   margin-top: -10rem;
   margin-bottom: 50px;
+  padding-bottom: 2rem;
 }
 .article__title h3 {
   padding: 12rem 30px 0 30px;
@@ -610,6 +640,16 @@ body {
 }
 .art__btn {
   padding-left: 30px;
+  display: inline-flex;
+}
+.art__btn a {
+  text-decoration: none;
+  color: #000;
+}
+.art__btn a:hover span {
+  padding-left: 5px;
+  color: #e22713;
+  transition: all ease 0.3s;
 }
 .article__title a {
   text-decoration: none;
