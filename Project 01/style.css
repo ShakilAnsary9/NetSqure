@@ -145,6 +145,11 @@ body {
 
 /* About CSS */
 
+.about_img {
+  background-image: url(./images/SR1_9498_websize.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .about {
   margin: 100px 0 0 0px !important;
 }
@@ -314,7 +319,7 @@ body {
 .sp__profile,
 .sp__text,
 .sp__button {
-  height: 20rem;
+  height: 25rem;
 }
 .sp__text,
 .sp__button {
@@ -329,32 +334,60 @@ body {
 .sp__text h1 {
   color: #e22713;
   font-size: 18px;
-  margin-left: 20px;
+  margin: 0 3rem;
 }
 .sp__text h3 {
   color: #ffffff;
   font-weight: 700;
-  margin-left: 20px;
+  margin: 0 3rem;
 }
 .sp__one {
   background-image: url(./images/Judith.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .sp__two {
-  background-image: url(./images/RUDI-LUMANTO-1.jpg);
+  background-image: url(./images/alex-web.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .sp__three {
-  background-image: url(./images/Margaret-Yunque-.jpg);
+  background-image: url(./images/RUDI-LUMANTO-1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .sp__four {
-  background-image: url(./images/Ruselle.jpg);
+  background-image: url(./images/Margaret-Yunque-.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .sp__five {
-  background-image: url(./images);
+  background-image: url(./images/JOVELYN-HAO.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sp__six {
+  background-image: url(./images/Ruselle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sp__seven {
+  background-image: url(./images/Hartnell-removebg-preview.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sp__eight {
+  background-image: url(./images/Steve-Njenga-.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .speakers {
   padding-bottom: 4rem;
@@ -369,20 +402,30 @@ body {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.556442645417542) 100%
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 100%
   );
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
 }
+.social__hover h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.social__hover p {
+  font-size: 0.7rem;
+  margin-top: -10px;
+}
 .hov__icon {
-  width: 30%;
+  width: 15%;
   display: flex;
-  justify-content: space-around;
-  font-size: 2rem;
+  justify-content: space-between;
+  font-size: 1rem;
 }
 .social__hover:hover {
   opacity: 1;
@@ -515,6 +558,9 @@ body {
   transform: translateY(-10px);
   color: #ffffff;
 }
+
+/* Video CSS */
+
 .video {
   height: 100vh;
   width: 100%;
@@ -526,12 +572,47 @@ body {
   justify-content: center;
 }
 .video span {
-  font-size: 6rem;
+  font-size: 3rem;
   color: #ffffff;
-  padding: 40px;
+  padding: 30px;
   background-color: #e22713;
   border-radius: 100%;
   cursor: pointer;
+  z-index: 9999;
+}
+
+.circles {
+  height: 30vmin;
+  position: relative;
+  width: 30vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circles > div {
+  animation: growAndFade 3s infinite ease-out;
+  background-color: #e22713;
+  border-radius: 50%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+.circles .circle1 {
+  animation-delay: 1s;
+}
+.circles .circle2 {
+  animation-delay: 2s;
+}
+@keyframes growAndFade {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
 }
 
 /* Testimonial CSS  */
@@ -550,6 +631,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.vtestimonial span {
+  z-index: 9999;
 }
 .test__one {
   background-image: url(./images/vtest01.jpg);
@@ -578,6 +662,15 @@ body {
 
 /* Image Gallery  */
 
+.gallery__fix {
+  --bs-gutter-x: 0 !important;
+}
+.gallery__fix img {
+  filter: brightness(60%) saturate(50%);
+}
+.gallery__fix img:hover {
+  filter: brightness(100%) saturate(100%);
+}
 .img__title {
   text-align: center;
   font-size: 42px;
@@ -858,6 +951,7 @@ body {
   }
   .aboutbtn {
     margin: 20px 0 50px 0;
+    padding: 0;
   }
   .btn-item {
     font-size: 12px;
