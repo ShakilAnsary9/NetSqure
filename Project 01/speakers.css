@@ -29,20 +29,16 @@
 }
 
 /* Profile Card CSS  */
+
 .row {
-  margin: 2rem 0;
+  margin: 3px 0;
 }
-/* .row > * {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-} */
 .speakers__profile {
   height: 20rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   filter: saturate(0%);
-  
 }
 .speakers__profile:hover {
   filter: saturate(100%);
@@ -81,6 +77,7 @@
 }
 .speaker__details h1 {
   font-size: 1.3rem;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -89,10 +86,120 @@
   font-weight: 400;
   margin-bottom: 5px;
 }
-
 .speaker__one {
-  background-image: url(./images/Hartnell-removebg-preview.png);
+  background-image: url(./images/speaker01.jpg);
 }
 .speaker__two {
-  background-image: url(./images/Hartnell-removebg-preview.png);
+  background-image: url(./images/speaker02.png);
+}
+.speaker__three {
+  background-image: url(./images/speaker03.jpg);
+}
+.speaker__four {
+  background-image: url(./images/speaker04.jpg);
+}
+.speaker__five {
+  background-image: url(./images/speaker05.jpg);
+}
+.speaker__six {
+  background-image: url(./images/speaker06.png);
+}
+.speaker__seven {
+  background-image: url(./images/speaker07.png);
+}
+.speaker__eight {
+  background-image: url(./images/speaker08.jpg);
+}
+.speaker__nine {
+  background-image: url(./images/speaker09.png);
+}
+.speaker__ten {
+  background-image: url(./images/speaker10.jpg);
+}
+.speaker__eleven {
+  background-image: url(./images/speaker11.jpg);
+}
+.speaker__twelve {
+  background-image: url(./images/speaker13.png);
+}
+.speaker__thirteen {
+  background-image: url(./images/speaker14.jpg);
+}
+.speaker__fourteen {
+  background-image: url(./images/speaker15.jpg);
+}
+.speaker__fifteen {
+  background-image: url(./images/speaker16.jpg);
+}
+.speaker__sixteen {
+  background-image: url(./images/speaker17.jpg);
+}
+.speaker__seventeen {
+  background-image: url(./images/speaker18.jpg);
+}
+.speaker__eighteen {
+  background-image: url(./images/speaker19.jpg);
+}
+.speaker__nineteen {
+  background-image: url(./images/speaker20.jpg);
+}
+.speaker__twenty {
+  background-image: url(./images/speaker21.jpg);
+}
+.speaker__twentyone {
+  background-image: url(./images/speaker22.jpg);
+}
+.speaker__twentytwo {
+  background-image: url(./images/speaker23.jpg);
+}
+.speaker__twentythree {
+  background-image: url(./images/speaker24.png);
+}
+.speaker__twentyfour {
+  background-image: url(./images/speaker26.jpg);
+}
+
+.first__row {
+  margin-top: 5rem;
+}
+.last__row {
+  margin-bottom: 8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .speakers__heading {
+    height: 25vh;
+  }
+  .speakers__outline {
+    display: none;
+  }
+  .speakers__solid {
+    font-size: 2.5rem;
+  }
+  .speakers__profile {
+    height: 10rem;
+  }
+  .profile__comp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.8rem 0.6rem 0.5rem 0.6rem;
+    opacity: 0;
+  }
+  .speaker__details h1 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .speaker__details h2 {
+    font-size: 0.6rem;
+    font-weight: 300;
+  }
+  .first__row {
+    margin-top: 1rem;
+  }
+  .last__row {
+    margin-bottom: 2rem;
+  }
 }
