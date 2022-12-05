@@ -3,12 +3,5 @@
     {
       "path": "."
     }
-  ],
-  "settings": {
-    "emmet.syntaxProfiles": {},
-    "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-    },
-    "liveServer.settings.port": 5501
-  }
+  ]
 }
