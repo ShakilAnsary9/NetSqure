@@ -33,6 +33,9 @@
 .nav {
   justify-content: center;
 }
+.agenda_section {
+  padding: 3rem 0 5rem 0;
+}
 .dimension {
   width: 500px;
   height: 300px;
@@ -70,4 +73,168 @@
 .nav-link span {
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+/* Schedule Details  */
+.container {
+  margin-top: 2rem;
+}
+.time__comp {
+  background-color: #f56c4d;
+}
+.time__comp:hover {
+  background-color: #ea3a29;
+}
+.meeting__time {
+  margin: 3rem 1.5rem;
+  color: #ffffff;
+}
+.meeting__time h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.meeting__time p {
+  padding-top: 2rem;
+}
+.img__comp {
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+.speaker__img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.date01__img01 {
+  background-image: url(./images/speaker01.jpg);
+}
+.date01__img02 {
+  background-image: url(./images/speaker02.png);
+}
+.date01__img03 {
+  background-image: url(./images/speaker03.jpg);
+}
+.date02__img01 {
+  background-image: url(./images/speaker04.jpg);
+}
+.date02__img02 {
+  background-image: url(./images/speaker05.jpg);
+}
+.date02__img03 {
+  background-image: url(./images/speaker06.png);
+}
+.date03__img01 {
+  background-image: url(./images/speaker07.png);
+}
+.date03__img02 {
+  background-image: url(./images/speaker08.jpg);
+}
+.date03__img03 {
+  background-image: url(./images/speaker09.png);
+}
+.meeting__details__comp {
+  border-top: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+.meeting__details {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meeting__details h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.meeting__details h2 {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.meeting__details h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.meeting__details p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding-top: 2rem;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-tabs .nav-link {
+    padding: 0 1.4rem;
+    margin: 0 0.2rem;
+  }
+  .nav-link h1 {
+    font-size: 0.8rem;
+  }
+  .nav-link span {
+    font-size: 0.6rem;
+  }
+
+  /* agenda heading  */
+
+  .agenda__heading {
+    height: 25vh;
+  }
+  .agenda__outline {
+    display: none;
+  }
+  .agenda__solid {
+    font-size: 2.5rem;
+  }
+  .agenda_section {
+    padding: 1.5rem 0 3rem 0;
+  }
+
+  /* proflie css  */
+
+  .meeting__time h1 {
+    font-size: 0.8rem;
+  }
+  .meeting__time {
+    margin: 2rem 0.6rem;
+    color: #ffffff;
+  }
+  .meeting__time p {
+    padding-top: 1rem;
+    font-size: 0.7rem;
+  }
+  .img__comp {
+    border-bottom: 0;
+    border-right: 1px solid gainsboro;
+  }
+  .meeting__details h1 {
+    font-size: 1.2rem;
+  }
+  .meeting__details h2 {
+    font-size: 0.6rem;
+  }
+  .meeting__details h3 {
+    font-size: 0.6rem;
+  }
+  .meeting__details p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    padding-top: 1rem;
+  }
+  .details__comp {
+    padding: 1rem 0.5rem;
+  }
+  .meeting__details__comp {
+    border-left: 1px solid gainsboro;
+  }
 }
