@@ -13,7 +13,12 @@ body {
 }
 
 /* Navbar CSS */
-
+.navbar-toggler {
+  color: transparent;
+}
+.navbar-toggler:focus {
+  color: #ffffff;
+}
 .navbar {
   background-color: #0f172a;
 }
@@ -37,12 +42,6 @@ body {
   background-color: #e22713;
   color: #ffffff;
   font-weight: 600;
-}
-.navbar-toggler {
-  color: #ffffff !important;
-}
-.navbar-toggler-icon {
-  color: #ffffff !important;
 }
 .navbar-expand-lg .navbar-collapse {
   justify-content: end !important;
@@ -1046,5 +1045,17 @@ body {
   }
   .form-control {
     padding-left: 20px !important;
+  }
+  .footer__top {
+    padding: 30px 10px;
+  }
+  .footer__line {
+    margin-top: 20px;
+  }
+  .copyright {
+    font-size: 0.8rem;
+  }
+  .madeby {
+    font-size: 0.7rem;
   }
 }
