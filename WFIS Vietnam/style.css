@@ -89,7 +89,6 @@ body {
 .date__info {
   width: 50%;
   padding-right: 3rem;
-  outline: 1px dashed green;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -97,7 +96,7 @@ body {
 .location__info {
   width: 50%;
   padding-left: 3rem;
-  outline: 1px dashed green;
+
   display: flex;
   align-items: center;
   justify-content: start;
@@ -108,7 +107,6 @@ body {
   padding-right: 1rem;
 }
 .hero__button {
-  outline: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
