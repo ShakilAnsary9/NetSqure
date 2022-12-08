@@ -64,7 +64,7 @@ body {
   justify-content: center;
 }
 .hero__text h1 {
-  font-size: 2.7rem;
+  font-size: 2.9rem;
   line-height: 1;
   text-align: left;
   text-transform: uppercase;
@@ -72,6 +72,14 @@ body {
 }
 .hero__text .blue__part {
   color: var(--primary-color);
+}
+.hero__textfix {
+  font-family: var(--manrope-bold);
+  font-weight: 800;
+}
+.hero__fontfix {
+  font-size: 2.5rem;
+  line-height: 0.8;
 }
 .info__comp {
   padding-top: 4rem;
@@ -196,4 +204,47 @@ body {
 .about__img img {
   width: 90%;
   padding-top: 8rem;
+}
+
+/* Info Grid Section CSS  */
+
+.info__grid {
+  padding: 0 8rem;
+}
+.info__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side__border {
+  border-right: 1px solid rgba(220, 220, 220, 0.2);
+}
+.all__border {
+  border-right: 1px solid rgba(220, 220, 220, 0.2);
+  border-top: 1px solid rgba(220, 220, 220, 0.2);
+}
+.top__border {
+  border-top: 1px solid rgba(220, 220, 220, 0.2);
+}
+.info__comp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+.info__comp:hover {
+  color: var(--secondary-color);
+}
+.info__comp i {
+  font-size: 3rem;
+  padding-left: 4rem;
+}
+.info__comp h2 {
+  padding: 1rem 4rem 0 2rem;
+  font-size: 1.5rem;
+  width: 70%;
+  font-family: var(--work-sans);
+  font-weight: bold;
+  text-align: left;
 }
