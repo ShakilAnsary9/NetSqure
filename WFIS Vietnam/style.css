@@ -1,12 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+  font-family: "IntregalCFHeavy";
+  src: url(./fonts/Fontspring-DEMO-integralcf-heavy.otf);
+}
 
 :root {
   --white: #ffffff;
   --primary-color: #4a9ff4;
   --secondary-color: #e8519d;
-  --main-font: "Paytone One", sans-serif;
+  --main-font: "IntregalCFHeavy", sans-serif;
+  --titlium-web: "Titillium Web", sans-serif;
+  --manrope-bold: "Manrope", sans-serif;
   --count-font: "Anton", sans-serif;
+  --work-sans: "Work Sans", sans-serif;
+  --bebas-neue: "Bebas Neue";
 }
 * {
   margin: 0;
@@ -42,6 +52,7 @@ body {
 }
 .hero__comp {
   color: var(--white);
+  padding: 0 25rem;
   z-index: 99999;
 }
 .big__logo {
@@ -53,14 +64,13 @@ body {
   justify-content: center;
 }
 .hero__text h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   line-height: 1;
   text-align: left;
   text-transform: uppercase;
-  padding: 0 2rem;
   font-family: var(--main-font);
 }
-.hero__text span {
+.hero__text .blue__part {
   color: var(--primary-color);
 }
 .info__comp {
@@ -68,8 +78,9 @@ body {
   padding-bottom: 5rem;
 }
 .info__comp h3 {
-  font-size: 1.5rem;
-  font-family: var(--main-font);
+  font-size: 1.7rem;
+  font-family: var(--titlium-web);
+  font-weight: 700;
   text-transform: uppercase;
 }
 .hero__info {
@@ -143,8 +154,8 @@ body {
 .counter__text h1 {
   color: var(--white);
   padding-bottom: 1rem;
-  font-size: 1.5rem;
-  font-family: var(--main-font);
+  font-size: 2.5rem;
+  font-family: var(--manrope-bold);
   border-bottom: 4px solid var(--secondary-color);
 }
 .count__comp {
@@ -157,9 +168,47 @@ body {
   color: var(--secondary-color);
 }
 .count__comp span {
-  font-size: 5rem;
-  font-family: var(--count-font);
+  font-size: 6rem;
+  font-family: var(--bebas-neue);
+  font-weight: bold;
 }
 .count__comp p {
-  font-family: var(--main-font);
+  font-family: var(--work-sans);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+/* #WFISVietnam Section CSS  */
+
+.about {
+  display: flex;
+}
+.about__text {
+  width: 50%;
+  padding-left: 5rem;
+}
+.about__text h1 {
+  color: var(--primary-color);
+  font-family: var(--titlium-web);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 6.8rem;
+}
+.about__text p {
+  color: #ffffff;
+  padding: 4rem 9rem 0 0;
+  font-size: 1.8rem;
+  font-family: var(--work-sans);
+}
+.about__img {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  padding: 0;
+  margin: 0;
+}
+.about__img img {
+  width: 90%;
+  padding-top: 8rem;
 }
