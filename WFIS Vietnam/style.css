@@ -6,6 +6,18 @@
   font-family: "IntregalCFHeavy";
   src: url(./fonts/Fontspring-DEMO-integralcf-heavy.otf);
 }
+@font-face {
+  font-family: "SFProBlack";
+  src: url(./fonts/SFPRODISPLAYBLACKITALIC.OTF);
+}
+@font-face {
+  font-family: "SFProRegular";
+  src: url(./fonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url(./fonts/MYRIADPRO-REGULAR.OTF);
+}
 
 :root {
   --white: #ffffff;
@@ -17,6 +29,9 @@
   --count-font: "Anton", sans-serif;
   --work-sans: "Work Sans", sans-serif;
   --bebas-neue: "Bebas Neue";
+  --sf-pro: "SFProBlack";
+  --sf-pro-regular: "SFProRegular";
+  --myriad-pro: "MyriadPro";
 }
 * {
   margin: 0;
@@ -248,3 +263,123 @@ body {
   font-weight: bold;
   text-align: left;
 }
+
+/* Speaker Section CSS  */
+
+.no__gutter {
+  --bs-gutter-x: 0rem !important;
+}
+.speaker__img {
+  height: 22rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img__overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.img__overlay:hover {
+  transition: all ease-in 0.5s;
+  opacity: 1;
+}
+.img__overlay p {
+  color: var(--white);
+  text-align: center;
+  padding: 0 2rem;
+  font-family: var(--myriad-pro);
+}
+.icon__comp {
+  padding-top: 2rem;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.icon__comp i {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+.icon__comp i:hover {
+  color: var(--primary-color);
+}
+.img__one {
+  background-image: url(./Images/Judith.jpg);
+}
+.img__two {
+  background-image: url(./Images/speaker12.jpg);
+}
+.img__three {
+  background-image: url(./Images/speaker02.png);
+}
+.img__four {
+  background-image: url(./Images/speaker03.jpg);
+}
+.img__five {
+  background-image: url(./Images/speaker04.jpg);
+}
+.img__six {
+  background-image: url(./Images/speaker05.jpg);
+}
+.img__seven {
+  background-image: url(./Images/speaker06.png);
+}
+.img__eight {
+  background-image: url(./Images/speaker07.png);
+}
+.img__nine {
+  background-image: url(./Images/speaker10.jpg);
+}
+.sepeker__info {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.speaker__name {
+  font-weight: bolder;
+  font-family: var(--sf-pro);
+  color: var(--primary-color);
+}
+#parent:hover .speaker__name {
+  color: var(--secondary-color);
+}
+.speaker__position {
+  font-size: 1.2rem;
+  color: var(--white);
+  font-family: var(--sf-pro-regular);
+}
+.speaker__company {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--white);
+  font-family: var(--sf-pro-regular);
+}
+.speaker__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22rem;
+  background: rgb(89, 156, 239);
+  background: linear-gradient(
+    90deg,
+    rgba(89, 156, 239, 1) 0%,
+    rgba(170, 132, 203, 1) 100%
+  );
+}
+.speaker__btn {
+  font-family: var(--sf-pro-regular);
+  font-weight: bold;
+  border: none;
+  background-color: var(--white);
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+
+
+
