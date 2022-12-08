@@ -308,31 +308,31 @@ body {
   color: var(--primary-color);
 }
 .img__one {
-  background-image: url(./Images/Judith.jpg);
+  background-image: url(./assets/images/Judith.jpg);
 }
 .img__two {
-  background-image: url(./Images/speaker12.jpg);
+  background-image: url(./assets/images/speaker12.jpg);
 }
 .img__three {
-  background-image: url(./Images/speaker02.png);
+  background-image: url(./assets/images/speaker02.png);
 }
 .img__four {
-  background-image: url(./Images/speaker03.jpg);
+  background-image: url(./assets/images/speaker03.jpg);
 }
 .img__five {
-  background-image: url(./Images/speaker04.jpg);
+  background-image: url(./assets/images/speaker04.jpg);
 }
 .img__six {
-  background-image: url(./Images/speaker05.jpg);
+  background-image: url(./assets/images/speaker05.jpg);
 }
 .img__seven {
-  background-image: url(./Images/speaker06.png);
+  background-image: url(./assets/images/speaker06.png);
 }
 .img__eight {
-  background-image: url(./Images/speaker07.png);
+  background-image: url(./assets/images/speaker07.png);
 }
 .img__nine {
-  background-image: url(./Images/speaker10.jpg);
+  background-image: url(./assets/images/speaker10.jpg);
 }
 .sepeker__info {
   text-align: center;
@@ -380,6 +380,38 @@ body {
   border-radius: 50px;
 }
 
-
-
-
+@media only screen and (max-width: 600px) {
+  /* Speaker Section MQ  */
+  .speaker__img,
+  .speaker__button {
+    height: 12rem;
+  }
+  .img__overlay p {
+    font-size: 0.7rem;
+    padding: 0 0.5rem;
+  }
+  .icon__comp {
+    padding-top: 1rem;
+    width: 30%;
+    justify-content: space-between;
+  }
+  .icon__comp i {
+    font-size: 1rem;
+    color: var(--white);
+  }
+  .sepeker__info {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .speaker__name {
+    font-size: 1rem;
+  }
+  .speaker__position {
+    font-size: 0.8rem;
+  }
+  .speaker__company {
+    font-size: 0.6rem;
+    margin-top: -3px;
+    opacity: 0.8;
+  }
+}
