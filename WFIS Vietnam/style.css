@@ -70,8 +70,15 @@ body {
   padding: 0 25rem;
   z-index: 99999;
 }
-.big__logo {
-  width: 38rem;
+.side__margin {
+  outline: 1px Solid blue;
+}
+.hero__img {
+  border-right: 0.5px solid rgba(232, 81, 157, 0.3);
+}
+.hero__img img {
+  width: 100%;
+  padding-right: 3rem;
 }
 .hero__text {
   display: flex;
@@ -80,6 +87,7 @@ body {
 }
 .hero__text h1 {
   font-size: 2.9rem;
+  padding-left: 1rem;
   line-height: 1;
   text-align: left;
   text-transform: uppercase;
@@ -96,57 +104,57 @@ body {
   font-size: 2.5rem;
   line-height: 0.8;
 }
-.info__comp {
-  padding-top: 4rem;
-  padding-bottom: 5rem;
+hr {
+  color: #e8519d !important;
 }
-.info__comp h3 {
-  font-size: 1.7rem;
-  font-family: var(--titlium-web);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.hero__info {
-  display: flex;
-}
-.date__info {
-  width: 50%;
-  padding-right: 3rem;
+.date__location,
+.button__comp {
   display: flex;
   align-items: center;
+}
+.date__comp,
+.location__comp,
+.button__one,
+.button__two {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.date__comp,
+.button__one {
   justify-content: end;
+  padding-right: 4rem;
 }
-.location__info {
-  width: 50%;
-  padding-left: 3rem;
-
-  display: flex;
-  align-items: center;
+.location__comp,
+.button__two {
   justify-content: start;
+  padding-left: 2rem;
 }
-.hero__info i {
+.date__location i {
   font-size: 2rem;
   color: var(--secondary-color);
-  padding-right: 1rem;
 }
-.hero__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero__button a {
-  font-family: var(--main-font);
-  font-size: 1rem;
+.date__location h3 {
+  font-family: var(--titlium-web);
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
   text-transform: uppercase;
-  color: var(--white);
-  position: relative;
 }
-.button__one {
-  background-color: var(--secondary-color);
-  padding-top: 0px;
-  padding-right: 50px;
-  padding-bottom: 20px;
-  padding-left: -20px;
+.button__comp {
+  padding: 5rem 0;
+}
+.button__comp a {
+  font-family: var(--titlium-web);
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--white);
+  padding: 0 2.5rem 0.8rem 0;
+  border-right: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+.button__comp a:hover {
+  color: var(--primary-color);
 }
 
 /* Counter Section CSS  */
@@ -246,10 +254,8 @@ body {
 }
 
 /* Tabs CSS  */
-
-.dimension {
-  width: 500px;
-  height: 300px;
+.tab__section {
+  padding-bottom: 8rem;
 }
 .nav {
   justify-content: end;
@@ -368,6 +374,27 @@ body {
 
 /* Speaker Section CSS  */
 
+.speaker__title {
+  color: var(--white);
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 10rem;
+}
+.speaker__title h1 {
+  font-family: var(--main-font);
+  font-size: 8rem;
+  opacity: 0.05;
+  position: absolute;
+}
+.speaker__title h2 {
+  font-size: 3rem;
+  font-family: var(--main-font);
+  padding-left: 5rem;
+}
+.speakers {
+  padding: 4rem 0;
+}
 .no__gutter {
   --bs-gutter-x: 0rem !important;
 }
@@ -483,6 +510,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  /* Hero Section MQ  */
+  .hero__text h1 {
+    font-size: 2rem;
+    padding-left: 0;
+  }
+
   /* Counter MQ  */
   .counter_section {
     padding: 0;
@@ -496,7 +529,7 @@ body {
   .count__comp span {
     font-size: 4rem;
   }
-  .count__comp{
+  .count__comp {
     justify-content: start;
   }
 
@@ -533,11 +566,22 @@ body {
     margin-top: -3px;
     opacity: 0.8;
   }
+  .speakers {
+    padding: 2rem 0;
+  }
+  .speaker__title h1 {
+    font-size: 5rem;
+  }
+  .speaker__title h2 {
+    font-size: 3rem;
+    padding-left: 0.5rem;
+    font-family: var(--main-font);
+  }
 
   /* Info Grid MQ  */
 
   .info__grid {
-    padding: 0 0;
+    padding: 2rem 0;
   }
   .info__comp {
     flex-direction: column;
@@ -565,7 +609,7 @@ body {
     padding-left: 0;
   }
   .wfis__text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .wfis__text p {
     padding: 2rem 0rem 0 0;
@@ -580,6 +624,9 @@ body {
   }
 
   /* Tabs MQ  */
+  .tab__section {
+    padding-bottom: 3rem;
+  }
   .nav {
     justify-content: start;
     padding: 2rem 0;
