@@ -779,6 +779,29 @@ hr {
   .tab-text p {
     font-size: 1rem;
   }
+
+  /* Stats MQ  */
+  .stats__title h1 {
+    font-size: 5rem;
+  }
+  .stats__title h2 {
+    font-size: 3rem;
+    padding: 0;
+  }
+  .col__fix {
+    margin-left: 0;
+    padding-top: 10rem;
+  }
+  .stats__comp h1 {
+    font-size: 2.5rem;
+  }
+  .stats__comp p {
+    font-size: 0.7rem;
+    width: 95%;
+  }
+  .total__comp p {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
