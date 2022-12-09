@@ -350,6 +350,7 @@ hr {
   border-top: 1px solid rgba(220, 220, 220, 0.2);
 }
 .info__comp {
+  padding: 2rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
