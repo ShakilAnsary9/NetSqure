@@ -210,7 +210,6 @@ body {
   justify-content: right;
   padding-top: 5rem;
 }
-
 .about {
   display: flex;
 }
@@ -243,10 +242,75 @@ body {
   padding-top: 8rem;
 }
 
+/* Tabs CSS  */
+
+.dimension {
+  width: 500px;
+  height: 300px;
+}
+.nav {
+  justify-content: end;
+  padding: 2rem 0;
+}
+.nav-item {
+  font-size: 1.5rem;
+  font-family: var(--main-font);
+  text-align: start !important;
+}
+.nav-link {
+  padding-left: 0 !important;
+  padding-bottom: 15px !important;
+}
+.nav-tabs .nav-link.active {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  border: none !important;
+}
+.nav-tabs .nav-link {
+  color: var(--white);
+  border: 3px solid #9400d3;
+  margin-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.nav-link:hover {
+  color: var(--primary-color) !important;
+  border-color: transparent !important;
+}
+.nav-link:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  border-bottom: 5px solid var(--secondary-color);
+}
+.nav-tabs {
+  border-bottom: 1px solid #9400d3;
+}
+.nav-link {
+  position: relative;
+  z-index: 1;
+}
+.tab-content {
+  border: 1px solid #9400d3;
+  padding: 20px;
+}
+
+/* No Edit  */
+.nav-tabs {
+  --bs-nav-tabs-border-width: none !important;
+  --bs-nav-tabs-border-color: none !important;
+  --bs-nav-tabs-border-radius: none !important;
+  --bs-nav-tabs-link-hover-border-color: none !important;
+  --bs-nav-tabs-link-active-color: none !important;
+  --bs-nav-tabs-link-active-bg: none !important;
+  --bs-nav-tabs-link-active-border-color: none !important;
+  border-bottom: none !important;
+}
+
 /* Info Grid Section CSS  */
-/* .row__margin {
-  padding: 0 10rem;
-} */
+
 .info__grid {
   padding: 0 8rem;
 }
