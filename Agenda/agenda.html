@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="agenda.css" />
+    <title>Agenda</title>
+  </head>
+  <body>
+    <!-- Agenda Hero Section  -->
+    <div class="container-fluid agenda__hero">
+      <div class="row">
+        <div class="col agenda__heroimg">
+          <img src="./assets/images/bg-agenda.jpg" alt="" />
+          <h1>Agenda</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Agenda File -->
+    <div class="container agenda__file">
+      <div class="row">
+        <div class="col agenda__button">
+          <button class="file__btn">DELEGATE ENQUIRY</button>
+          <button class="file__btn">SPONSOR ENQUIRY</button>
+          <button class="file__btn">DOWNLOAD IN PDF</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Agenda Tabs -->
+    <div class="container-fluid all__tabs">
+      <ul class="nav nav-tabs agenda__tabs">
+        <li class="nav-item">
+          <a class="nav-link nav__tab active" data-bs-toggle="tab" href="#home"
+            >Day 01</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav__tab" data-bs-toggle="tab" href="#profile"
+            >Day 02</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content text-white">
+        <div class="tab-pane active" id="home">
+          <div class="event__comp">
+            <div class="row event__header">
+              <div class="col-6 col-md-3 tab__pad tab__content">
+                08:00 - 09:00
+              </div>
+              <div class="col-6 col-md-2 event__title tab__content">
+                REGISTRATION & COFFEE
+              </div>
+              <div class="col col-md-7 reg__img"></div>
+            </div>
+          </div>
+          <div class="row event__list01">
+            <div class="col-12 col-md-3 tab__pad tab__content">09:00 - 09:10</div>
+            <div class="col-12 col-md-9 tab__content">
+              <div class="list__details">
+                <h1>
+                  DIGITAL MALAYSIA: POSITIONING MALAYSIA AS THE NEXT REGIONAL DATACENTRE HUB
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="profile">
+          <div class="row border g-0 rounded shadow-sm">
+            <div class="col p-4">
+              <h3>Profile</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

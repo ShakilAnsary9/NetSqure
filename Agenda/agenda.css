@@ -1,0 +1,117 @@
+body {
+  background: rgb(8, 23, 78);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 23, 78, 1) 0%,
+    rgba(4, 10, 32, 1) 100%
+  );
+}
+
+/* Agenda Hero  */
+.agenda__hero {
+  overflow: hidden;
+}
+.agenda__heroimg {
+  height: 60vh;
+  background-image: url();
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: white;
+}
+.agenda__heroimg h1 {
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Agenda Button */
+.agenda__file {
+  background-color: #121f4f;
+  padding: 3rem 0;
+  margin-top: -5rem;
+  position: relative;
+  z-index: 9999;
+}
+.agenda__button {
+  display: flex;
+  margin: 0 13rem;
+  justify-content: space-between;
+}
+.file__btn {
+  border: none;
+  padding: 0.6rem 3rem;
+  border-radius: 50px;
+  background-color: #4a9ff4;
+  color: white;
+}
+.file__btn:hover {
+  background-color: #e7549f;
+  color: #000000;
+}
+
+/* Agenda Tabs */
+.all__tabs {
+  padding: 0 !important;
+  overflow: hidden;
+}
+.agenda__tabs {
+  padding: 8rem 0 3rem 0;
+  justify-content: center;
+  border-bottom: none !important;
+}
+.nav__tab {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 3rem 10rem;
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: #121f4f !important;
+}
+.nav__tab:hover {
+  color: #e7549f !important;
+}
+.nav__tab.active {
+  background-color: #e7549f !important;
+  color: #ffffff !important;
+}
+
+/* Sigle Tab */
+.event__header {
+  background-color: #e7549f;
+  height: 15rem;
+}
+.tab__pad {
+  padding-left: 10rem;
+}
+.tab__content {
+  display: flex;
+  align-items: center;
+}
+.time__text {
+  height: 15rem;
+}
+.reg__img {
+  background-image: url(./assets/images/Registration-img.jpg);
+  filter: brightness(60%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.event__title {
+  color: #000000;
+}
+
+/* Event List */
+
+.event__list01 {
+  padding: 2rem 0;
+}
+.list__details h1 {
+  font-size: 1.5rem;
+  color: #4a9ff4;
+}
